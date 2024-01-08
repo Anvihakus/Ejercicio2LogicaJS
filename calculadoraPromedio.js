@@ -51,8 +51,11 @@ if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || nota1 < 0 || nota1 > 10 || n
     console.log(promedio)
 
     if (promedio >= 7) {
-        console.log(`Felicidades, ${nombreAlumno},la materia de ${Materia}, la aprobaste con un promedio de` + promedio.toFixed(2) +`.`);
+        alert(`Felicidades, ${nombreAlumno},la materia de ${Materia}, la aprobaste con un promedio de` + promedio.toFixed(2) +`.`);
       } else {
-        console.log(nombreAlumno + `, Gracias por tu esfuerzo. Tu promedio en la materia de ${Materia} es ` + promedio.toFixed(2) + " Puntaje insuficiente para aprobar...  Nos vemos pronto en clase");
+        alert(nombreAlumno + `, Gracias por tu esfuerzo. Tu promedio en la materia de ${Materia} es ` + promedio.toFixed(2) + " Puntaje insuficiente para aprobar...  Nos vemos pronto en clase");
       }
 }
+
+/* La tarea solicita quese imprima (console log), lo cual puede visualizarse solamente con la herramienta de inspeccionar en el navegador
+pero es mejor visualmente usar el alert para que salga en ventana el mensaje de aprobacion o reprobacion */
