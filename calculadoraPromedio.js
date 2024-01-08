@@ -36,6 +36,7 @@ let nota1 = parseInt(prompt("Ingrese la primer nota de 0 a 10:"));
 let nota2 = parseInt(prompt("Ingrese la segunda nota de 0 a 10:"));
 let nota3 = parseInt(prompt("Ingrese la tercera nota de 0 a 10:"));
 /*
+Otra manera de comprobar validez de datos y hacer el promedio
 if (nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <= 10 && nota3 >= 0 && nota3 <= 10) {
   var promedio = (nota1 + nota2 + nota3) / 3;
 */
@@ -50,8 +51,8 @@ if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || nota1 < 0 || nota1 > 10 || n
     console.log(promedio)
 
     if (promedio >= 7) {
-        alert(`Felicidades, ${nombreAlumno},la materia de ${Materia}, la aprobaste con un promedio de ${promedio}.`);
+        console.log(`Felicidades, ${nombreAlumno},la materia de ${Materia}, la aprobaste con un promedio de` + promedio.toFixed(2) +`.`);
       } else {
-        alert(nombreAlumno + `, Gracias por tu esfuerzo. Tu promedio en la materia de ${Materia} es ` + promedio.toFixed(2) + " Puntaje insuficiente para aprobar...  Nos vemos pronto en clase");
+        console.log(nombreAlumno + `, Gracias por tu esfuerzo. Tu promedio en la materia de ${Materia} es ` + promedio.toFixed(2) + " Puntaje insuficiente para aprobar...  Nos vemos pronto en clase");
       }
 }
